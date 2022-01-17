@@ -1,7 +1,7 @@
 // Dependecncies
 const util = require('util');
 const fs = require('fs');
-const { v4: uuidv4 } = require('uuid'); // Newest update
+const { v4: uuidv4 } = require('uuid');
 
 
 const readNote = util.promisify(fs.readFile);
@@ -33,10 +33,10 @@ class Save {
         if (!title || !text) {
             throw new Error('Both title and text can not be blank');
         }
-        // Use UUID package to add unique IDs
+        // Use a npm package to add unique IDs
         const newNote = { title, text, id: uuidv4() };
 
-        // Retrieve Notes, add the new note, update notes
+        // Retrieve notes, add the new note, update notes
         return this.retrieveNotes()
             .then(notes => [...notes, newNote])
             .then(updatedNotes => this.write(updatedNotes))
