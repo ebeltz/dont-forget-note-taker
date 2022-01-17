@@ -18,6 +18,8 @@
   "homepage": "https://github.com/ebeltz/note-taker#readme",
   "dependencies": {
     "express": "^4.17.2",
-    "jest": "^27.4.7"
+    "jest": "^27.4.7",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.12"
   }
 }
