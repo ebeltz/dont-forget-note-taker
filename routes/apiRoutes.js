@@ -1,6 +1,5 @@
 // Dependencies
 const router = require('express').Router();
-
 const saveData = require('../db/saveData');
 
 // GET request using router
