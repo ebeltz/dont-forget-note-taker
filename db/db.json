@@ -1,1 +1,6 @@
-[{"title":"Test Title","text":"Test text"},{"title":"Places to Visit","text":"Charleston","id":"5ec302f4-ddad-491d-8a27-37c1e5d2ce8d"},{"title":"Things to Pack","text":"Dog Bed","id":"c091c429-156b-4366-93b1-dd8989342133"}]
+[
+    {
+        "title":"Test Title",
+        "text":"Test text"
+    }
+]
