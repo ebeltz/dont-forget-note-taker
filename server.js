@@ -2,6 +2,8 @@
 const express = require("express");
 const fs = require("fs");
 const path = require('path');
+const htmlRoutes = require('./routes/htmlRoutes');
+const apiRoutes = require('./routes/apiRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -10,7 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-
+// Use apiRoutes
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 // Default response for any other request (Not Found)
 app.use((req, res) => {
